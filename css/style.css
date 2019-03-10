@@ -56,6 +56,7 @@ h1, h2, p {
 	display: block;
 	width: 26px;
 	height: 26px;
+	cursor: pointer;
 	background-image: url(../img/call.png);
 }
 .promo {
@@ -89,6 +90,7 @@ h1, h2, p {
 .promo__btn {
 	padding: 20px 70px;
 	margin-top: 25px;
+	cursor: pointer;
 }
 .services {
 	margin-bottom: 100px;
@@ -114,6 +116,7 @@ h1, h2, p {
 }
 .services__btn {
 	padding: 20px 60px;
+	cursor: pointer;
 }
 .banner {
 	background-image: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
