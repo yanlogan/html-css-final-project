@@ -5,6 +5,7 @@ html, body {
 body {
 	min-width: 320px;
 	margin-top: 30px;
+	padding: 0 20px;
 	font-family: 'Roboto', sans-serif;
 	color: #1f1f24;
 }
@@ -24,7 +25,6 @@ h1, h2, p {
 .container {
 	/* max-width: 1170px; */
 	margin: 0 auto;
-	padding: 0 20px;
 }
 .header-container {
 	display: flex;
@@ -115,15 +115,15 @@ h1, h2, p {
 	padding: 20px 60px;
 }
 
-@media (min-width: 1024px) {
-	.container {
+@media (min-width: 992px) {
+	body {
 		padding: 0 40px;
 	}
 	.header__burger {
 		width: 45px;
 	}
 	.header__contact {
-		font-size: 25px;
+		font-size: 22px;
 		margin-right: 30px;
 	}
 	.header__btn {
@@ -136,6 +136,30 @@ h1, h2, p {
 	}
 	.header__btn-text {
 		display: inline-block;
+	}
+	.promo {
+		background-image: url(../img/photo-tablet.jpg);
+		background-position: right bottom;
+		margin-bottom: 90px;
+	}
+	.promo-container {
+		align-items: flex-start;
+		padding-top: 250px;
+		padding-bottom: 230px;
+	}
+	.promo__heading {
+		font-size: 54px;
+		margin-bottom: 28px;
+	}
+	.promo__subheading {
+		font-size: 22px;
+		text-align: left;
+	}
+	.promo__btn {
+		margin-top: 46px;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 25px 95px;
 	}
 }
 
@@ -155,5 +179,11 @@ h1, h2, p {
 	.header__menu-link_active {
 		color: #fc557c;
 		text-decoration: underline; 
+	}
+	.promo__heading {
+		font-size: 80px;
+	}
+	.promo__btn {
+		padding: 20px 70px;
 	}
 }
