@@ -73,11 +73,11 @@ h1, h2, p {
 	font-weight: 900;
 	margin-bottom: 10px;
 }
-.promo__subheading {
+.promo__subheading,
+.services-item__text {
 	color: #8993ad;
 	text-align: center;
 	line-height: 24px;
-	margin-bottom: 25px;
 }
 .btn-primary {
 	display: block;
@@ -86,11 +86,33 @@ h1, h2, p {
 	background-color: #ff4e2e;
 }
 .promo__btn {
-	padding: 20px 80px;
-}
-
-.services__btn {
 	padding: 20px 70px;
+	margin-top: 25px;
+}
+.services {
+	margin-bottom: 100px;
+}
+.services-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.services__heading {
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 45px;
+}
+.services-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 55px;
+}
+.services-item__img {
+	margin-bottom: 20px;
+}
+.services__btn {
+	padding: 20px 60px;
 }
 
 @media (min-width: 1024px) {
