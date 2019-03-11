@@ -191,6 +191,16 @@ h1, h2, p {
 	height: 25px;
 	background-position: -170px -3px;
 }
+footer {
+	background-color: #31293c;
+}
+.footer-container {
+	display: flex;
+	justify-content: center;
+	padding: 18px 60px;
+	color: #fff;
+	font-size: 11px;
+}
 
 @media (min-width: 768px) {
 	.promo__heading {
