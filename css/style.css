@@ -164,6 +164,32 @@ h1, h2, p {
 .contacts__btn {
 	padding: 20px 70px;
 	cursor: pointer;
+	margin-bottom: 50px;
+}
+.icon {
+	display: inline-block;
+	margin-right: 28px;
+	background: url(../img/social.png) no-repeat;
+}
+.icon-vk {
+	width: 35px;
+	height: 21px;
+	background-position: 0 -8px;
+}
+.icon-fb {
+	width: 16px;
+	height: 28px;
+	background-position: -65px 0px;
+}
+.icon-tw {
+	width: 29px;
+	height: 25px;
+	background-position: -110px -5px;
+}
+.icon-ig {
+	width: 25px;
+	height: 25px;
+	background-position: -170px -3px;
 }
 
 @media (min-width: 768px) {
