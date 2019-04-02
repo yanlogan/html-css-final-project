@@ -75,7 +75,8 @@ h1, h2, p {
 	margin-bottom: 10px;
 }
 .promo__subheading,
-.services-item__text {
+.services-item__text,
+.projects-item__text {
 	color: #8993ad;
 	text-align: center;
 	line-height: 24px;
@@ -97,15 +98,19 @@ h1, h2, p {
 	margin-bottom: 100px;
 }
 .services-container,
-.services-block {
+.services-block,
+.projects-container,
+.projects-block {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.services__heading {
+.services__heading,
+.projects__heading {
 	font-size: 30px;
 	font-weight: 900;
 	margin-bottom: 45px;
+	text-align: center;
 }
 .services-item {
 	display: flex;
@@ -113,8 +118,40 @@ h1, h2, p {
 	align-items: center;
 	margin-bottom: 55px;
 }
-.services-item__img {
+.services-item__img,
+.projects-item__img {
 	margin-bottom: 20px;
+}
+.projects {
+	margin-bottom: 50px;
+}
+.projects-item {
+	display: none;
+}
+.projects-item:nth-child(1) {
+	display: block;
+}
+.projects-item__active {
+	display: block;
+}
+.projects-item__img,
+.projects-item__img img {
+	width: 100%;
+}
+.projects .slider-block {
+	width: 60px;
+	display: flex;
+	justify-content: space-between;
+	margin: 45px auto;
+}
+.slider-item {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ebebeb;
+}
+.slider-item__active {
+	background-color: #ff4e2e;
 }
 .banner {
 	background-image: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
@@ -208,19 +245,33 @@ footer {
 	.promo__subheading {
 		font-size: 20px;
 	}
-	.services__heading {
+	.services__heading,
+	.projects__heading {
 		font-size: 42px;
 	}
 	.services-block {
 		flex-flow: row wrap;
 		justify-content: center;
 	}
+	.projects-block {
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
 	.services-item {
 		flex-basis: 50%;
 		margin-bottom: 85px;
 	}
+	.projects-item {
+		flex-basis: 47%;
+	}
+	.projects-item:nth-child(2) {
+		display: block;
+	}
 	.services-item__text {
 		max-width: 270px;
+		font-size: 18px;
+	}
+	.projects-item__text {
 		font-size: 18px;
 	}
 	.banner__heading {
@@ -304,7 +355,8 @@ footer {
 		font-weight: 500;
 		padding: 25px 95px;
 	}
-	.services__heading {
+	.services__heading,
+	.projects__heading {
 		font-size: 54px;
 		margin-bottom: 90px;
 		padding-top: 20px;
@@ -353,9 +405,18 @@ footer {
 		justify-content: space-between;
 		margin-bottom: 95px;
 	}
-	.services-item {
+	.projects-block {
+		flex-flow: row nowrap;
+	}
+	.services-item,
+	.projects-item {
 		flex-basis: auto;
 		margin-bottom: 0;
 	}
-	
+	.projects-item {
+		max-width: 32%;
+	}
+	.projects-item:nth-child(3) {
+		display: block;
+	}
 }
