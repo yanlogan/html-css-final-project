@@ -125,6 +125,23 @@ h1, h2, p {
 .projects {
 	margin-bottom: 50px;
 }
+.projects-block {
+	position: relative;
+}
+.slider-prev,
+.slider-next {
+	position: absolute;
+	top: 120px;
+	border-radius: 50%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+.slider-prev {
+	left: -30px;
+}
+.slider-next {
+	right: -30px;
+	transform: rotate(180deg);
+}
 .projects-item {
 	display: none;
 }
