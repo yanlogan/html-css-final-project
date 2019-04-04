@@ -59,15 +59,26 @@ h1, h2, p {
 	background-image: url(../img/call.png);
 }
 .promo {
-	background-image: url(../img/photo-mobile.jpg);
-	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	min-width: 100%;
+	padding-top: 415px;
 	margin-bottom: 50px;
+	background: url(../img/bg-mobile.png) right 105px no-repeat;
+	/* background-size: cover; */
+}
+.promo:before {
+	position: absolute;
+	z-index: -1;
+	top: 65px;
+	right: 8%;
+	content: url(../img/hero-mobile.png);
 }
 .promo-container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 415px;
 }
 .promo__heading {
 	font-size: 30px;
@@ -243,6 +254,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+	.promo {
+		/* background-image: url(../img/bg-tablet.png); */
+		/* background-position: right 0; */
+	}
 	.promo__heading {
 		font-size: 42px;
 	}
@@ -336,14 +351,19 @@ footer {
 		display: inline-block;
 	}
 	.promo {
-		background-image: url(../img/photo-tablet.jpg);
-		background-position: right bottom;
 		margin-bottom: 90px;
+		padding-top: 250px;
+		padding-bottom: 230px;
+		background-position: right bottom;
+		background-image: url(../img/bg-tablet.png);
+	}
+	.promo:before {
+		content: url(../img/hero-tablet.png);
+		top: auto;
+		bottom: 0;
 	}
 	.promo-container {
 		align-items: flex-start;
-		padding-top: 250px;
-		padding-bottom: 230px;
 	}
 	.promo__heading {
 		font-size: 54px;
@@ -399,8 +419,15 @@ footer {
 		color: #fc557c;
 		text-decoration: underline; 
 	}
+	.promo {
+		background-image: url(../img/bg-full.png);
+	}
+	.promo:before {
+		content: url(../img/hero-full.png);
+		right: 15%;
+	}
 	.promo__heading {
-		font-size: 80px;
+		font-size: 72px;
 	}
 	.promo__btn {
 		padding: 20px 70px;
